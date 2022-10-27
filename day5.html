@@ -1,0 +1,25 @@
+<h1>5. Difference between useEffect and useContext ?</h1>
+    <h4>useEffect-</h4>
+      It allows us to implement all of the lifecycle hooks from within a single function API.
+    1.componentdidMount- this will run when the component mounts,This will run, when the component is first initialized   <br><br>
+
+  2.componeneDidUpdate-This will run only when count state changes and anytime the stateful data changes  <br> <br>
+ 3.componentWillUnmount-This will run when the component is destroyed or before the component is removed from UI. <br><br>
+  
+    <h4>useContext-</h4>
+    <p>
+      1.This hook allows us to work with React's Context API, which itself a mechanism to allow us to share data within it's component tree without passing through props. <br>2. Context API uses Context. Provider and Context. Consumer Components pass down the data but it is very cumbersome to write the long functional code to use this Context API. <br>
+    
+3.The useContext accepts the value provided by React.createContext and then re-render the component whenever its value changes but you can still optimize its performance by using memoization.
+
+<pre>
+    Syntax:
+
+const authContext = useContext(initialValue);
+</pre>
+    
+
+      
+    
+      
+    
